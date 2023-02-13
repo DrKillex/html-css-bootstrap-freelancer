@@ -10,10 +10,6 @@
     background-color: #1ABC9C;
 }
 
-#footer-top {
-    background-color: #3A546D;
-}
-
 header img {
     width: 30%;
 }
@@ -33,6 +29,44 @@ input {
     border-bottom: 1px solid black;
 }
 
+/* footer */
+
+#footer-top {
+    background-color: #3A546D;
+}
+
 footer ul li {
     list-style: none;
+}
+
+/* effetto stella */
+
+.star_spacer {
+    position: relative;
+    font-size: 30px;
+}
+
+.star_spacer::after, .star_spacer::before {
+    content: '';
+    height: 2px;
+    width: 100px;
+    background-color: black;
+    display: block;
+}
+
+#jumbo .star_spacer::after, #jumbo .star_spacer::before, 
+#about .star_spacer::after, #about .star_spacer::before {
+    background-color: white;
+}
+
+.star_spacer::after {
+    position: absolute;
+    right: 35%;
+    bottom: 40%;
+}
+
+.star_spacer::before {
+    position: absolute;
+    left: 35%;
+    bottom: 40%;
 }
